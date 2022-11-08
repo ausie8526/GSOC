@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM manipulation</title>
+
+
+</head>
+
+<body>
+    <h3>Dom Manipulation</h3>
+	<label>Enter Value 1: </label>
+	<input type="text" id="val1" />
+	<br />
+	<br />
+	<label>Enter Value 2: </label>
+	<input type=".text" id="val2" />
+	<br />
+	<button onclick="getAdd()" style="margin-top: 15px;margin-left : 15px;">Click To Add</button>
+	<p id="result"></p>
+
+	<script type="text/javascript">
+	function getAdd() {
+		
+		
+		const num1 = Number(document.getElementById("val1").value);
+		
+		
+		const num2 = Number(document.getElementById("val2").value);
+		const add = num1 + num2;
+		console.log(add);
+		
+		
+		document.getElementById("result").innerHTML = "Addition : " + add;
+		
+		
+		document.getElementById("result").style.color = "red";
+	}
+	</script>
+</body>
+
+</html>
